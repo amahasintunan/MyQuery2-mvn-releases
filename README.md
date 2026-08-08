@@ -52,7 +52,7 @@ If `java` is not on your PATH, set `JAVA_HOME` in `myquery.ini`.
 - Paginated query results (configurable fetch limit)
 - Table import and export: XML, CSV, HTML (XSL), DDL generation
 - LOB cell inspection: MIME type detection, text/image/HTML render, content download
-- Content detect, translate, dump, and inspect for LOB/CLOB/BLOB columns
+- Content detect, translate, and dump for LOB/CLOB/BLOB columns
 - Detect encoding for file content
 - Explain plan / execution plan per database backend
 - Long running queries and lock info
