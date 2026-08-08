@@ -76,10 +76,10 @@ CLASSPATH=$CLASSPATH:misc/language-detector-0.6.jar
 CLASSPATH=$CLASSPATH:misc/sqlite-jdbc-3.47.1.0.jar
 
 # Ora*i18n LCSD jars (Oracle proprietary — excluded from distribution).
-# Users who need Oracle LCSD can drop these jars into misc/:
-[ -f "misc/orai18n"*".jar" ]             && CLASSPATH=$CLASSPATH:$(echo misc/orai18n*.jar | head -1)
-[ -f "misc/orai18n-mapping"*".jar" ]     && CLASSPATH=$CLASSPATH:$(echo misc/orai18n-mapping*.jar | head -1)
-[ -f "misc/orai18n-lcsd"*".jar" ]        && CLASSPATH=$CLASSPATH:$(echo misc/orai18n-lcsd*.jar | head -1)
+# Users who need Oracle LCSD can drop these jars into misc/ and uncomment:
+# CLASSPATH=$CLASSPATH:misc/orai18n.jar
+# CLASSPATH=$CLASSPATH:misc/orai18n-mapping.jar
+# CLASSPATH=$CLASSPATH:misc/orai18n-lcsd.jar
 
 # ── JDBC drivers ─────────────────────────────────────────────────────────
 # Only PostgreSQL is bundled (BSD 2‑Clause).  Other drivers must be
