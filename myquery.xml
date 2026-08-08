@@ -16,46 +16,40 @@
         <connectTimeout>45</connectTimeout>         <!-- HTTP connection timeout in seconds                       -->
     </globalProps>
     <jdbcDrivers>
-        <!--
         <jdbc>
             <name>postgres</name>
             <description>Postgres JDBC driver</description>
             <driver>org.postgresql.Driver</driver>
             <connectName></connectName>
             <dbname>postgres</dbname>
-            <userid>postgres</userid>
-            <password>postgres</password>
-            <hostname>localhost</hostname>
-            <portnumber>5432</portnumber>
-            <url>jdbc:postgresql://[hostname]:[portnumber]/[dbname]</url>
-        </jdbc>
-        -->
-        <jdbc>
-            <name>postgres</name>
-            <description>Postgres JDBC driver</description>
-            <driver>org.postgresql.Driver</driver>
-            <connectName></connectName>
-            <dbname>sdbmain</dbname>
-            <userid>saydb</userid>
-            <password>saydb</password>
+            <userid>psuser1</userid>
+            <password>password</password>
             <hostname>localhost</hostname>
             <portnumber>5432</portnumber>
             <url>jdbc:postgresql://[hostname]:[portnumber]/[dbname]</url>
         </jdbc>
         <!--
-          Oracle and MySQL JDBC drivers are NOT bundled (licensing restrictions).
-          Download the driver from the vendor and place it in jdbc/ first:
-            Oracle: https://www.oracle.com/database/technologies/appdev/jdbc-downloads.html
-            MySQL:  https://dev.mysql.com/downloads/connector/j/
+        <jdbc>
+            <name>postgres</name>
+            <description>Postgres (SDB) JDBC driver</description>
+            <driver>org.postgresql.Driver</driver>
+            <connectName></connectName>
+            <dbname>sdb123</dbname>
+            <userid>sdbuser1</userid>
+            <password>password</password>
+            <hostname>localhost</hostname>
+            <portnumber>5432</portnumber>
+            <url>jdbc:postgresql://[hostname]:[portnumber]/[dbname]</url>
+        </jdbc>
         -->
         <jdbc>
             <name>oracle</name>
             <description>Oracle thin JDBC driver</description>
             <driver>oracle.jdbc.driver.OracleDriver</driver>
             <connectName></connectName>
-            <dbname>ldbmain</dbname>
-            <userid>sys as sysdba</userid>
-            <password>change_on_install</password>
+            <dbname>oradb</dbname>
+            <userid>oruser1</userid>
+            <password>password</password>
             <hostname>localhost</hostname>
             <portnumber>1521</portnumber>
             <url>jdbc:oracle:thin:@[hostname]:[portnumber]/[dbname]</url>
@@ -66,8 +60,8 @@
             <driver>com.mysql.cj.jdbc.Driver</driver>
             <connectName></connectName>
             <dbname>mysql</dbname>
-            <userid>root</userid>
-            <password>mysql</password>
+            <userid>msuser1</userid>
+            <password>password</password>
             <hostname>localhost</hostname>
             <portnumber>3306</portnumber>
             <url>jdbc:mysql://[hostname]:[portnumber]/[dbname]</url>

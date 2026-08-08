@@ -1,7 +1,5 @@
 # MyQuery2 v2.1 — JDBC Desktop Query Tool
 
-![MyQuery2 screenshot](https://user-images.githubusercontent.com/79295034/165001208-595bce0c-fa88-4b13-96e2-2a96949f259c.png)
-
 A Java Swing JDBC desktop query tool for Oracle, PostgreSQL, SDB, MySQL, and SQLite.
 
 ## What's in this package
@@ -11,8 +9,7 @@ A Java Swing JDBC desktop query tool for Oracle, PostgreSQL, SDB, MySQL, and SQL
 | `myquery.jar` | Application JAR |
 | `myquery2.sh` | Linux/Mac launcher |
 | `myquery2.bat` | Windows launcher |
-| `myquery.xml` | Driver configuration (default) |
-| `myquery2.xml` | Driver configuration (public) |
+| `myquery.xml` | Driver configuration |
 | `myquery.ini` | JAVA_HOME config |
 | `log4j2.xml` | Logging config |
 | `jdbc/` | JDBC driver jars (PostgreSQL bundled) |

@@ -94,7 +94,7 @@ SET CLASSPATH=%CLASSPATH%;%JDBC_CLASSPATH%
 
 ECHO JDBC drivers: %JDBC_CLASSPATH%
 
-"%JAVA_CMD%" -cp %CLASSPATH% -Xms2g -Xmx8g -Dlog4j.configurationFile=log4j2.xml -Dmyquery.config=myquery2.xml myquery.MyQuery
+"%JAVA_CMD%" -cp %CLASSPATH% -Xms2g -Xmx8g -Dlog4j.configurationFile=log4j2.xml -Dmyquery.config=myquery.xml myquery.MyQuery
 SET RC=%ERRORLEVEL%
 IF %RC% EQU 127 (
     ECHO The specified JAVA path does not exist. Check the setting of JAVA_HOME in myquery.ini.
