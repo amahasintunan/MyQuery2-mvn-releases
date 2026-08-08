@@ -50,8 +50,13 @@ If `java` is not on your PATH, set `JAVA_HOME` in `myquery.ini`.
 - Tree-based connection browser with schema/table/views/indexes navigation
 - SQL editor with multi-statement support
 - Paginated query results (configurable fetch limit)
-- Table export: XML, CSV, HTML (XSL), DDL generation
-- LOB cell inspection: MIME type detection, text/image/HTML render, translation
+- Table import and export: XML, CSV, HTML (XSL), DDL generation
+- LOB cell inspection: MIME type detection, text/image/HTML render, content download
+- Content detect, translate, dump, and inspect for LOB/CLOB/BLOB columns
+- Detect encoding for file content
+- Explain plan / execution plan per database backend
+- Long running queries and lock info
+- List statistics and bind variable support
 - Server monitor: CPU, memory, disk, and table usage charts
 - Language & character set detection (Apache Tika)
 
