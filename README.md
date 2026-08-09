@@ -2,7 +2,7 @@
 
 ![MyQuery2 screenshot](screenshot.png)
 
-A Java Swing JDBC desktop query tool for Oracle, PostgreSQL, SDB, and MySQL.
+**MyQuery2** ("My Database Query App") is a desktop SQL client written in Java Swing using JDBC drivers. It allows users to configure and persist connections to multiple databases — Oracle, PostgreSQL, SDB, and MySQL — whether local or remote. Users can write SQL queries manually or use the built-in UI to generate statements. They can explore database objects (tables, views, indexes, etc.), perform related tasks, and import or export table definitions and data across the same or different databases. Administrators can monitor database information such as locks, long-running queries, and CPU/memory/disk usage (Oracle only), and can terminate rogue queries that monopolize system resources.
 
 ## What's in this package
 
