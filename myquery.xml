@@ -27,11 +27,11 @@
             <hostname>localhost</hostname>
             <portnumber>5432</portnumber>
             <url>jdbc:postgresql://[hostname]:[portnumber]/[dbname]</url>
+            <jarfile>jdbc/postgresql-*.jar</jarfile>
         </jdbc>
-        <!--
         <jdbc>
-            <name>postgres</name>
-            <description>Postgres (SDB) JDBC driver</description>
+            <name>sdb</name>
+            <description>Salesforce SDB JDBC driver (Postgres-compatible)</description>
             <driver>org.postgresql.Driver</driver>
             <connectName></connectName>
             <dbname>sdb123</dbname>
@@ -40,8 +40,8 @@
             <hostname>localhost</hostname>
             <portnumber>5432</portnumber>
             <url>jdbc:postgresql://[hostname]:[portnumber]/[dbname]</url>
+            <jarfile>jdbc/sdb-jdbc-*.jar</jarfile>
         </jdbc>
-        -->
         <jdbc>
             <name>oracle</name>
             <description>Oracle thin JDBC driver</description>
@@ -53,6 +53,7 @@
             <hostname>localhost</hostname>
             <portnumber>1521</portnumber>
             <url>jdbc:oracle:thin:@[hostname]:[portnumber]/[dbname]</url>
+            <jarfile>jdbc/ojdbc*.jar</jarfile>
         </jdbc>
         <jdbc>
             <name>mysql</name>
@@ -65,6 +66,7 @@
             <hostname>localhost</hostname>
             <portnumber>3306</portnumber>
             <url>jdbc:mysql://[hostname]:[portnumber]/[dbname]</url>
+            <jarfile>jdbc/mysql-connector-j-*.jar</jarfile>
         </jdbc>
     </jdbcDrivers>
 </query>
