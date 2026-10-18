@@ -16,43 +16,28 @@
         <connectTimeout>45</connectTimeout>         <!-- HTTP connection timeout in seconds                       -->
     </globalProps>
     <jdbcDrivers>
-        <!--
         <jdbc>
             <name>postgres</name>
             <description>Postgres JDBC driver</description>
             <driver>org.postgresql.Driver</driver>
             <connectName></connectName>
-            <dbname>postgres</dbname>
+            <dbname>pgdb</dbname>
             <userid>postgres</userid>
             <password>postgres</password>
             <hostname>localhost</hostname>
             <portnumber>5432</portnumber>
             <url>jdbc:postgresql://[hostname]:[portnumber]/[dbname]</url>
         </jdbc>
-        -->
-        <jdbc>
-            <name>postgres</name>
-            <description>Postgres JDBC driver</description>
-            <driver>org.postgresql.Driver</driver>
-            <connectName></connectName>
-            <dbname>sdbmain</dbname>
-            <userid>saydb</userid>
-            <password>saydb</password>
-            <hostname>localhost</hostname>
-            <portnumber>5432</portnumber>
-            <url>jdbc:postgresql://[hostname]:[portnumber]/[dbname]</url>
-            <jarfile>jdbc/postgresql-*.jar</jarfile>
-        </jdbc>
         <jdbc>
             <name>sdb</name>
             <description>Salesforce SDB JDBC driver (Postgres-compatible)</description>
             <driver>org.postgresql.Driver</driver>
             <connectName></connectName>
-            <dbname>sdbmain</dbname>
+            <dbname>sfdb</dbname>
             <userid>saydb</userid>
             <password>saydb</password>
             <hostname>localhost</hostname>
-            <portnumber>5432</portnumber>
+            <portnumber>5434</portnumber>
             <url>jdbc:postgresql://[hostname]:[portnumber]/[dbname]</url>
             <jarfile>jdbc/sdb-jdbc-*.jar</jarfile>
         </jdbc>
@@ -61,7 +46,7 @@
             <description>Oracle thin JDBC driver</description>
             <driver>oracle.jdbc.driver.OracleDriver</driver>
             <connectName></connectName>
-            <dbname>ldbmain</dbname>
+            <dbname>ordb</dbname>
             <userid>sys as sysdba</userid>
             <password>change_on_install</password>
             <hostname>localhost</hostname>
@@ -74,7 +59,7 @@
             <description>MySQL JDBC driver</description>
             <driver>com.mysql.cj.jdbc.Driver</driver>
             <connectName></connectName>
-            <dbname>mysql</dbname>
+            <dbname>msdb</dbname>
             <userid>root</userid>
             <password>mysql</password>
             <hostname>localhost</hostname>
@@ -84,4 +69,3 @@
         </jdbc>
     </jdbcDrivers>
 </query>
-
