@@ -10,6 +10,8 @@
         <sampling>2000</sampling>                   <!-- fetch first n rows for a query (default 0 all rows)      -->
         <refresh>0</refresh>                        <!-- refresh query every 0..60 seconds (default 0 no refresh) -->
         <translationLength>4096</translationLength> <!-- Translation limit of 4K characters (default 0 no limit)  -->
+        <translationProvider>libretranslate</translationProvider> <!-- libretranslate (default) or google -->
+        <translationUrl>http://localhost:5000/translate</translationUrl> <!-- translation endpoint -->
         <exportFirst>0</exportFirst>                <!-- export table the first n rows (default 0 allrows)        -->
         <lcsd>tika</lcsd>                           <!-- lcsd oracle or tika (default tika)                       -->
         <browserPath>/opt/google/chrome/chrome</browserPath>
@@ -21,12 +23,13 @@
             <description>Postgres JDBC driver</description>
             <driver>org.postgresql.Driver</driver>
             <connectName></connectName>
-            <dbname>pgdb</dbname>
+            <dbname>postgres</dbname>
             <userid>postgres</userid>
-            <password>postgres</password>
+            <password>mysecretpassword</password>
             <hostname>localhost</hostname>
             <portnumber>5432</portnumber>
             <url>jdbc:postgresql://[hostname]:[portnumber]/[dbname]</url>
+            <jarfile>jdbc/postgresql-*.jar</jarfile>
         </jdbc>
         <jdbc>
             <name>sdb</name>
@@ -69,3 +72,4 @@
         </jdbc>
     </jdbcDrivers>
 </query>
+
