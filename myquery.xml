@@ -12,6 +12,10 @@
         <translationLength>4096</translationLength> <!-- Translation limit of 4K characters (default 0 no limit)  -->
         <translationProvider>libretranslate</translationProvider> <!-- libretranslate (default) or google -->
         <translationUrl>http://localhost:5000/translate</translationUrl> <!-- translation endpoint -->
+        <!-- To use Google Cloud Translation instead:
+        <translationProvider>google</translationProvider>
+        <translationUrl>https://translation.googleapis.com/language/translate/v2</translationUrl>
+        -->
         <exportFirst>0</exportFirst>                <!-- export table the first n rows (default 0 allrows)        -->
         <lcsd>tika</lcsd>                           <!-- lcsd oracle or tika (default tika)                       -->
         <browserPath>/opt/google/chrome/chrome</browserPath>
@@ -23,9 +27,9 @@
             <description>Postgres JDBC driver</description>
             <driver>org.postgresql.Driver</driver>
             <connectName></connectName>
-            <dbname>postgres</dbname>
+            <dbname>pgdb</dbname>
             <userid>postgres</userid>
-            <password>mysecretpassword</password>
+            <password>postgres</password>
             <hostname>localhost</hostname>
             <portnumber>5432</portnumber>
             <url>jdbc:postgresql://[hostname]:[portnumber]/[dbname]</url>
