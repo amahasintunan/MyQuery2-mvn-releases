@@ -2,7 +2,7 @@
 
 <img width="1188" height="728" alt="Screenshot 2026-10-17 at 12 59 15 PM" src="https://github.com/user-attachments/assets/642ca5dc-684e-4370-b252-db9dd9a56f69" />
 
-**MyQuery** ("My Database Query App") is a desktop SQL client written in Java Swing using JDBC drivers. It allows users to configure and persist connections to multiple databases — Oracle, PostgreSQL, SDB, and MySQL — whether local or remote. Users can write SQL queries manually or use the built-in UI to generate statements. They can explore database objects (tables, views, indexes, etc.), perform related tasks, and import or export table definitions and data across the same or different databases. Administrators can monitor database information such as locks, long-running queries, and CPU/memory/disk usage (Oracle only), and can terminate rogue queries that monopolize system resources.
+**MyQuery** ("My Database Query App") is a platform-independent Java Swing desktop SQL client that utilizes JDBC drivers to connect to Oracle, PostgreSQL, SDB, and MySQL databases. It allows users to securely save and manage connections to both local and remote environments. Beyond manual and UI-driven SQL query generation, the application enables database object exploration and seamless data import/export across different database systems. For administrators, MyQuery provides tools to monitor system resources (CPU, memory, and disk usage for Oracle), track active database locks, and terminate resource-intensive queries.
 
 ## What's in this package
 
